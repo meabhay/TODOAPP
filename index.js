@@ -16,7 +16,7 @@ app.use("/api/v1", todoRoutes);      //mount means add or append with /api/v1
 app.listen(PORT, () => {
     console.log(`Server is running at port number ${PORT}`);
 })
-
+  
 //connecting to database
 connectDB;
 

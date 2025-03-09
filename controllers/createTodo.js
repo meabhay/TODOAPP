@@ -4,7 +4,7 @@ const Todo = require("../models/todo.js");
 exports.createTodo = async(req, res) => {
     try {
         //extract title and description from request body
-        const {title, description} = req.body;
+        const {title, description} = req.body;      //express.json() middleware is used to parse json from   body of request
         //create a new Todo Obj and insert in DB
         const response = await Todo.create({title, description});
         //send a json response with a success flag

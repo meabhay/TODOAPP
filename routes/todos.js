@@ -10,7 +10,7 @@ const { deleteById } = require("../controllers/deleteTodo.js");
 
 
 //define API routes
-router.post("/createTodo", createTodo);
+router.post("/createTodo", createTodo);      //SYNTAX-: router.METHOD("PATH", HANDLER(CONTROLLER))
 router.get("/getTodo",getTodo);
 router.get("/getById/:id", getById);
 router.put("/updateById/:id", updateById);
